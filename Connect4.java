@@ -237,7 +237,7 @@ public class Connect4{
     else
       System.out.println(p2 + ", enter a column: ");
     try {
-      column = scan.nextInt();
+      column = (scan.nextInt() - 1);
       if (column_full(column)){
         System.out.println("Column is full. Try again.");
         placePiece();
@@ -270,3 +270,4 @@ public class Connect4{
 
   }
 }
+
